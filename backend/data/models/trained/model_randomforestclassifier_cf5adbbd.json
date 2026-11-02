@@ -1,0 +1,41 @@
+{
+  "model_id": "model_randomforestclassifier_cf5adbbd",
+  "model_type": "RandomForestClassifier",
+  "target_horizon": 5,
+  "validation_method": "walk_forward_purged",
+  "features_used": [
+    "confidence_weighted_sentiment",
+    "sentiment_momentum",
+    "sentiment_surprise",
+    "rolling_7d_mean",
+    "rsi_14",
+    "macd",
+    "volatility_20d",
+    "volume_ratio"
+  ],
+  "train_samples": 1646,
+  "test_samples": 413,
+  "metrics": {
+    "accuracy": 0.5617,
+    "precision": 0.3304,
+    "recall": 0.2676,
+    "f1": 0.2957,
+    "roc_auc": 0.4505
+  },
+  "feature_importance": {
+    "volatility_20d": 0.2729,
+    "rsi_14": 0.2681,
+    "macd": 0.2601,
+    "volume_ratio": 0.1989,
+    "confidence_weighted_sentiment": 0.0,
+    "sentiment_momentum": 0.0,
+    "sentiment_surprise": 0.0,
+    "rolling_7d_mean": 0.0
+  },
+  "hyperparameters": {
+    "n_estimators": 100,
+    "max_depth": 6,
+    "min_samples_split": 5
+  },
+  "created_at": "2026-10-23T08:45:52.657349"
+}

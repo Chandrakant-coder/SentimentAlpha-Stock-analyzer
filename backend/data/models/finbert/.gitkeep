@@ -1,0 +1,2 @@
+# This directory stores locally cached FinBERT weights (ProsusAI/finbert)
+# Downloaded automatically by backend/app/ml/finbert_loader.py

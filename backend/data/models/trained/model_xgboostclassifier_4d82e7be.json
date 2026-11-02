@@ -1,0 +1,55 @@
+{
+  "model_id": "model_xgboostclassifier_4d82e7be",
+  "model_type": "XGBoostClassifier",
+  "target_horizon": 5,
+  "validation_method": "walk_forward_purged",
+  "features_used": [
+    "confidence_weighted_sentiment",
+    "sentiment_momentum",
+    "sentiment_surprise",
+    "rolling_7d_mean",
+    "article_count",
+    "returns_1d",
+    "momentum_20d",
+    "rsi_14",
+    "macd",
+    "volatility_20d",
+    "volume_ratio"
+  ],
+  "train_samples": 4046,
+  "test_samples": 1013,
+  "metrics": {
+    "accuracy": 0.4788,
+    "precision": 0.3267,
+    "recall": 0.3989,
+    "f1": 0.3592,
+    "roc_auc": 0.451
+  },
+  "feature_importance": {
+    "volatility_20d": 0.2223,
+    "rsi_14": 0.1715,
+    "macd": 0.1626,
+    "momentum_20d": 0.1601,
+    "volume_ratio": 0.1483,
+    "returns_1d": 0.1353,
+    "confidence_weighted_sentiment": 0.0,
+    "sentiment_momentum": 0.0,
+    "sentiment_surprise": 0.0,
+    "rolling_7d_mean": 0.0,
+    "article_count": 0.0
+  },
+  "hyperparameters": {
+    "n_estimators": 300,
+    "max_depth": 4,
+    "learning_rate": 0.05,
+    "subsample": 0.8,
+    "colsample_bytree": 0.8,
+    "min_child_weight": 5,
+    "gamma": 0.1,
+    "reg_alpha": 0.1,
+    "reg_lambda": 1.0,
+    "scale_pos_weight": 1.1007,
+    "early_stopping_rounds": 30
+  },
+  "created_at": "2026-10-30T04:34:37.945635"
+}
